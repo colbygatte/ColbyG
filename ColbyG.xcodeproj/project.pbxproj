@@ -586,6 +586,7 @@
 				E974D72B1DB007B100A06F7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E974D72C1DB007B100A06F7D /* Build configuration list for PBXNativeTarget "ColbyGTests" */ = {
 			isa = XCConfigurationList;
@@ -594,6 +595,7 @@
 				E974D72E1DB007B100A06F7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E974D72F1DB007B100A06F7D /* Build configuration list for PBXNativeTarget "ColbyGUITests" */ = {
 			isa = XCConfigurationList;
@@ -602,6 +604,7 @@
 				E974D7311DB007B100A06F7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

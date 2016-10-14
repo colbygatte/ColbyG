@@ -18,6 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    // Uncomment this line to erase all data
+    //[self deleteStoreData];
+    
     // DON'T FORGET
     // Initialize "stores"
     stores = [[NSMutableArray alloc] init];
@@ -53,8 +56,18 @@
 - (void) loadStoreData {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSData *encodedObject = [defaults objectForKey:@"storeData"];
+    
     NSMutableArray *object = [NSKeyedUnarchiver unarchiveObjectWithData:encodedObject];
     stores = object;
+    if(stores == nil) {
+        stores = [[NSMutableArray alloc] init];
+    }
+}
+
+- (void) deleteStoreData {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults removeObjectForKey:@"storeData"];
+    [defaults synchronize];
 }
 
 - (void)didReceiveMemoryWarning {
