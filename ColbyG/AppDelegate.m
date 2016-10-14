@@ -21,9 +21,12 @@
     // This changes the automatically generated buttons
     // in the navigation bar
     [[UINavigationBar appearance] setTintColor:[UIColor colorWithHexString:NAV_BAR_BUTTON_TINTCOLOR]];
-    [[UITextField appearance] setBackgroundColor:[UIColor colorWithHexString:@"82A5A7"]];
+    [[UITextField appearance] setBackgroundColor:[UIColor colorWithHexString:TEXT_FIELD_BG_COLOR]];
     [[UITextField appearance] setTextColor:[UIColor colorWithHexString:@"FFFFFF"]];
     [[UITextField appearance] setBorderStyle:UITextBorderStyleLine];
+    
+    [[UITextView appearance] setBackgroundColor:[UIColor colorWithHexString:TEXT_FIELD_BG_COLOR]];
+    [[UITextView appearance] setTextColor:[UIColor colorWithHexString:@"FFFFFF"]];
     
     //[[UITextField appearance] setBorderSt]
     return YES;

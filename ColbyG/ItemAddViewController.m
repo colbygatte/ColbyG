@@ -32,7 +32,7 @@
     newItem.itemName = self.itemNameTextField.text;
     newItem.itemQuantity = self.itemQuantityTextField.text;
     newItem.itemChecked = @"no";
-    newItem.itemDescription = @"";
+    newItem.itemDescription = self.itemDescriptionTextView.text;
     
     
     [self.selectedStore.storeItems addObject:newItem];

@@ -26,6 +26,8 @@
 @interface ItemAddViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UITextField *itemNameTextField;
 @property (nonatomic, weak) IBOutlet UITextField *itemQuantityTextField;
+@property (nonatomic, weak) IBOutlet UITextView *itemDescriptionTextView;
+
 @property (nonatomic, strong) Store *selectedStore;
 @property (nonatomic, assign) id<ItemAddViewController_Delegate> delegate;
 
