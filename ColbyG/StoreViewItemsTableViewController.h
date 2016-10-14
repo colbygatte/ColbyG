@@ -12,9 +12,11 @@
 #import "Item.h"
 #import "Store.h"
 #import "ItemAddViewController.h"
+#import "ItemViewViewController.h"
 
 @protocol StoreViewItemsTableViewController_Delegate
 - (void) storeDataHasChanged;
+- (void) saveStoreData;
 @end
 
 

@@ -23,6 +23,7 @@
 		E974D7461DB01DFB00A06F7D /* Values.m in Sources */ = {isa = PBXBuildFile; fileRef = E974D7451DB01DFB00A06F7D /* Values.m */; };
 		E974D74F1DB054F700A06F7D /* ItemAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E974D74E1DB054F700A06F7D /* ItemAddViewController.m */; };
 		E974D7521DB0600500A06F7D /* StoreViewItemsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E974D7501DB0600500A06F7D /* StoreViewItemsTableViewController.m */; };
+		E974D7971DB07A7900A06F7D /* ItemViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E974D7961DB07A7900A06F7D /* ItemViewViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,8 @@
 		E974D74E1DB054F700A06F7D /* ItemAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemAddViewController.m; sourceTree = "<group>"; };
 		E974D7501DB0600500A06F7D /* StoreViewItemsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreViewItemsTableViewController.m; sourceTree = "<group>"; };
 		E974D7511DB0600500A06F7D /* StoreViewItemsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreViewItemsTableViewController.h; sourceTree = "<group>"; };
+		E974D7951DB07A7900A06F7D /* ItemViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemViewViewController.h; sourceTree = "<group>"; };
+		E974D7961DB07A7900A06F7D /* ItemViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemViewViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,10 +192,12 @@
 				E974D7331DB0089500A06F7D /* StoreListTableViewController.m */,
 				E974D73E1DB0112C00A06F7D /* StoreAddViewController.h */,
 				E974D73F1DB0112C00A06F7D /* StoreAddViewController.m */,
-				E974D7501DB0600500A06F7D /* StoreViewItemsTableViewController.m */,
 				E974D7511DB0600500A06F7D /* StoreViewItemsTableViewController.h */,
+				E974D7501DB0600500A06F7D /* StoreViewItemsTableViewController.m */,
 				E974D74D1DB054F700A06F7D /* ItemAddViewController.h */,
 				E974D74E1DB054F700A06F7D /* ItemAddViewController.m */,
+				E974D7951DB07A7900A06F7D /* ItemViewViewController.h */,
+				E974D7961DB07A7900A06F7D /* ItemViewViewController.m */,
 			);
 			name = Store;
 			sourceTree = "<group>";
@@ -341,6 +346,7 @@
 				E974D73A1DB0096600A06F7D /* Item.m in Sources */,
 				E974D7071DB007B100A06F7D /* ViewController.m in Sources */,
 				E974D7401DB0112C00A06F7D /* StoreAddViewController.m in Sources */,
+				E974D7971DB07A7900A06F7D /* ItemViewViewController.m in Sources */,
 				E974D7341DB0089500A06F7D /* StoreListTableViewController.m in Sources */,
 				E974D7521DB0600500A06F7D /* StoreViewItemsTableViewController.m in Sources */,
 				E974D7041DB007B000A06F7D /* AppDelegate.m in Sources */,

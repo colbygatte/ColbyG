@@ -62,39 +62,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-/******************************************************************
- * tableView
- ******************************************************************/
-
-// numberOfSectionsInTableView
-- (NSInteger) numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
-}
-
-// numberOfRowsInSection
-- (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return stores.count;
-}
-
-// cellForRowAtIndexPath
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    Store *viewThisStore = stores[indexPath.row];
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"StoreCell" forIndexPath:indexPath];
-    cell.textLabel.text = viewThisStore.storeName;
-    
-    UIView *bgView = [[UIView alloc] init];
-    if(indexPath.row % 2) {
-        cell.backgroundColor = [UIColor colorWithHexString:CELL_1_COLOR];
-        bgView.backgroundColor = [UIColor colorWithHexString:CELL_1_SELECTED_BG_VIEW];
-    } else {
-        cell.backgroundColor = [UIColor colorWithHexString:CELL_2_COLOR];
-        bgView.backgroundColor = [UIColor colorWithHexString:CELL_2_SELECTED_BG_VIEW];
-    }
-    [cell setSelectedBackgroundView:bgView];
-    
-    return cell;
-}
 
 /******************************************************************
  * Segue
@@ -131,27 +98,64 @@
 }
 
 
+/******************************************************************
+ * tableView
+ ******************************************************************/
 
-/*
+// numberOfSectionsInTableView
+- (NSInteger) numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+// numberOfRowsInSection
+- (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return stores.count;
+}
+
+// cellForRowAtIndexPath
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    Store *viewThisStore = stores[indexPath.row];
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"StoreCell" forIndexPath:indexPath];
+    cell.textLabel.text = viewThisStore.storeName;
+    
+    UIView *bgView = [[UIView alloc] init];
+    if(indexPath.row % 2) {
+        cell.backgroundColor = [UIColor colorWithHexString:CELL_1_COLOR];
+        bgView.backgroundColor = [UIColor colorWithHexString:CELL_1_SELECTED_BG_VIEW];
+    } else {
+        cell.backgroundColor = [UIColor colorWithHexString:CELL_2_COLOR];
+        bgView.backgroundColor = [UIColor colorWithHexString:CELL_2_SELECTED_BG_VIEW];
+    }
+    [cell setSelectedBackgroundView:bgView];
+    
+    return cell;
+}
+
+
+
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
     // Return NO if you do not want the specified item to be editable.
     
     return YES;
 }
-*/
 
-/*
+
+
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        [stores removeObjectAtIndex:indexPath.row];
+        [self saveStoreData];
+        [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }   
 }
-*/
+
 
 /*
 // Override to support rearranging the table view.
