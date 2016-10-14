@@ -6,7 +6,9 @@
 //  Copyright © 2016 colbyg. All rights reserved.
 //
 
-#import "ViewController.h"
+//#import "ViewController.h"
+#import <UIKit/UIKit.h>
+
 #import "HexToRGB.h"
 #import "Values.h"
 #import "Store.h"
@@ -21,7 +23,7 @@
 - (void) storeDataHasChanged;
 @end
 
-@interface ItemAddViewController : ViewController
+@interface ItemAddViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UITextField *itemNameTextField;
 @property (nonatomic, weak) IBOutlet UITextField *itemQuantityTextField;
 @property (nonatomic, strong) Store *selectedStore;

@@ -6,12 +6,12 @@
 //  Copyright © 2016 colbyg. All rights reserved.
 //
 
-#import "ViewController.h"
+#import <UIKit/UIKit.h>
 #import "Item.h"
 #import "HexToRGB.h"
 #import "Values.h"
 
-@interface ItemViewViewController : ViewController
+@interface ItemViewViewController : UIViewController
 
 @property (nonatomic, weak) IBOutlet UILabel *itemName;
 @property (nonatomic, weak) IBOutlet UILabel *itemQuantity;

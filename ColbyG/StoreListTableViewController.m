@@ -32,6 +32,7 @@
     self.view.backgroundColor = [UIColor colorWithHexString:BACKGROUND_COLOR];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone; // HIDE the cell sepearator
     
+    
     // This doesn't do anything:
     //self.navigationController.editButtonItem.tintColor = [UIColor whiteColor];
     //

@@ -19,6 +19,12 @@
     
     self.view.backgroundColor = [UIColor colorWithHexString:BACKGROUND_COLOR];
     
+    self.itemNameTextField.layer.borderColor = [[UIColor colorWithHexString:TEXT_FIELD_BG_COLOR] CGColor];
+    self.itemNameTextField.layer.borderWidth = 1.0;
+    
+    self.itemQuantityTextField.layer.borderColor = [[UIColor colorWithHexString:TEXT_FIELD_BG_COLOR] CGColor];
+    self.itemQuantityTextField.layer.borderWidth = 1.0;
+    
 }
 
 - (IBAction) addButtonPressed {

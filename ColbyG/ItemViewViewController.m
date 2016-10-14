@@ -19,9 +19,18 @@
     self.view.backgroundColor = [UIColor colorWithHexString:BACKGROUND_COLOR];
     // Do any additional setup after loading the view.
     
+    
+    NSNumberFormatter *formatter = [NSNumberFormatter new];
+    [formatter setNumberStyle:NSNumberFormatterDecimalStyle]; // this line is important!
+    
+    NSString *formattedItemQuantity = [formatter stringFromNumber:[NSNumber numberWithInteger:self.selectedItem.itemQuantity.intValue]];
+    
+    
     self.itemName.text = self.selectedItem.itemName;
-    self.itemQuantity.text = self.selectedItem.itemQuantity;
+    self.itemQuantity.text = formattedItemQuantity;
     self.itemDescription.text = @"";
+    
+    
     
 }
 

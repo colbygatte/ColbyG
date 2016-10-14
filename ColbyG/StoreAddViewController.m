@@ -19,6 +19,12 @@
     
     self.view.backgroundColor = [UIColor colorWithHexString:BACKGROUND_COLOR];
     
+    self.storeNameTextField.layer.borderColor = [[UIColor colorWithHexString:TEXT_FIELD_BG_COLOR] CGColor];
+    self.storeNameTextField.layer.borderWidth = 1.0;
+
+    self.storeIDTextField.layer.borderColor = [[UIColor colorWithHexString:TEXT_FIELD_BG_COLOR] CGColor];
+    self.storeIDTextField.layer.borderWidth = 1.0;
+    
 }
 
 /******************************************************************

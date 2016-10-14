@@ -6,7 +6,7 @@
 //  Copyright © 2016 colbyg. All rights reserved.
 //
 
-#import "ViewController.h"
+#import <UIKit/UIKit.h>
 #import "Store.h"
 #import "Values.h"
 #import "HexToRGB.h"
@@ -23,7 +23,7 @@
 /******************************************************************
  * Interface
  ******************************************************************/
-@interface StoreAddViewController : ViewController
+@interface StoreAddViewController : UIViewController
 @property (nonatomic, strong) id<StoreAddViewController_Delegate> delegate;
 
 @property (nonatomic, strong) IBOutlet UITextField *storeNameTextField;
