@@ -118,6 +118,15 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"StoreCell" forIndexPath:indexPath];
     cell.textLabel.text = viewThisStore.storeName;
+    NSString *subtitle;
+    if(viewThisStore.storeItems.count > 1) {
+        subtitle = [NSString stringWithFormat:@"%d items", viewThisStore.storeItems.count];
+    } else if(viewThisStore.storeItems.count <= 0) {
+        subtitle = @"no items";
+    } else {
+        subtitle = @"1 item";
+    }
+    cell.detailTextLabel.text = subtitle;
     
     UIView *bgView = [[UIView alloc] init];
     if(indexPath.row % 2) {
