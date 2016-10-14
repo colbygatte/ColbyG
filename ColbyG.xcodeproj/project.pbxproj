@@ -21,8 +21,8 @@
 		E974D7401DB0112C00A06F7D /* StoreAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E974D73F1DB0112C00A06F7D /* StoreAddViewController.m */; };
 		E974D7431DB01C5100A06F7D /* HexToRGB.m in Sources */ = {isa = PBXBuildFile; fileRef = E974D7421DB01C5100A06F7D /* HexToRGB.m */; };
 		E974D7461DB01DFB00A06F7D /* Values.m in Sources */ = {isa = PBXBuildFile; fileRef = E974D7451DB01DFB00A06F7D /* Values.m */; };
-		E974D74C1DB0373200A06F7D /* StoreViewItemsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E974D74B1DB0373200A06F7D /* StoreViewItemsTableViewController.m */; };
 		E974D74F1DB054F700A06F7D /* ItemAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E974D74E1DB054F700A06F7D /* ItemAddViewController.m */; };
+		E974D7521DB0600500A06F7D /* StoreViewItemsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E974D7501DB0600500A06F7D /* StoreViewItemsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,10 +71,10 @@
 		E974D7421DB01C5100A06F7D /* HexToRGB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HexToRGB.m; sourceTree = "<group>"; };
 		E974D7441DB01DFB00A06F7D /* Values.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Values.h; sourceTree = "<group>"; };
 		E974D7451DB01DFB00A06F7D /* Values.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Values.m; sourceTree = "<group>"; };
-		E974D74A1DB0373200A06F7D /* StoreViewItemsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StoreViewItemsTableViewController.h; path = ../StoreViewItemsTableViewController.h; sourceTree = "<group>"; };
-		E974D74B1DB0373200A06F7D /* StoreViewItemsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StoreViewItemsTableViewController.m; path = ../StoreViewItemsTableViewController.m; sourceTree = "<group>"; };
 		E974D74D1DB054F700A06F7D /* ItemAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemAddViewController.h; sourceTree = "<group>"; };
 		E974D74E1DB054F700A06F7D /* ItemAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemAddViewController.m; sourceTree = "<group>"; };
+		E974D7501DB0600500A06F7D /* StoreViewItemsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreViewItemsTableViewController.m; sourceTree = "<group>"; };
+		E974D7511DB0600500A06F7D /* StoreViewItemsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreViewItemsTableViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,8 +189,8 @@
 				E974D7331DB0089500A06F7D /* StoreListTableViewController.m */,
 				E974D73E1DB0112C00A06F7D /* StoreAddViewController.h */,
 				E974D73F1DB0112C00A06F7D /* StoreAddViewController.m */,
-				E974D74A1DB0373200A06F7D /* StoreViewItemsTableViewController.h */,
-				E974D74B1DB0373200A06F7D /* StoreViewItemsTableViewController.m */,
+				E974D7501DB0600500A06F7D /* StoreViewItemsTableViewController.m */,
+				E974D7511DB0600500A06F7D /* StoreViewItemsTableViewController.h */,
 				E974D74D1DB054F700A06F7D /* ItemAddViewController.h */,
 				E974D74E1DB054F700A06F7D /* ItemAddViewController.m */,
 			);
@@ -342,12 +342,12 @@
 				E974D7071DB007B100A06F7D /* ViewController.m in Sources */,
 				E974D7401DB0112C00A06F7D /* StoreAddViewController.m in Sources */,
 				E974D7341DB0089500A06F7D /* StoreListTableViewController.m in Sources */,
+				E974D7521DB0600500A06F7D /* StoreViewItemsTableViewController.m in Sources */,
 				E974D7041DB007B000A06F7D /* AppDelegate.m in Sources */,
 				E974D74F1DB054F700A06F7D /* ItemAddViewController.m in Sources */,
 				E974D7461DB01DFB00A06F7D /* Values.m in Sources */,
 				E974D7371DB0095900A06F7D /* Store.m in Sources */,
 				E974D7011DB007B000A06F7D /* main.m in Sources */,
-				E974D74C1DB0373200A06F7D /* StoreViewItemsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
