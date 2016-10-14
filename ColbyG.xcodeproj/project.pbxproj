@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E974D7011DB007B000A06F7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E974D7001DB007B000A06F7D /* main.m */; };
+		E974D7041DB007B000A06F7D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E974D7031DB007B000A06F7D /* AppDelegate.m */; };
+		E974D7071DB007B100A06F7D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E974D7061DB007B100A06F7D /* ViewController.m */; };
+		E974D70A1DB007B100A06F7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E974D7081DB007B100A06F7D /* Main.storyboard */; };
+		E974D70C1DB007B100A06F7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E974D70B1DB007B100A06F7D /* Assets.xcassets */; };
+		E974D70F1DB007B100A06F7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E974D70D1DB007B100A06F7D /* LaunchScreen.storyboard */; };
+		E974D71A1DB007B100A06F7D /* ColbyGTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E974D7191DB007B100A06F7D /* ColbyGTests.m */; };
+		E974D7251DB007B100A06F7D /* ColbyGUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E974D7241DB007B100A06F7D /* ColbyGUITests.m */; };
+		E974D7341DB0089500A06F7D /* StoreListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E974D7331DB0089500A06F7D /* StoreListTableViewController.m */; };
+		E974D7371DB0095900A06F7D /* Store.m in Sources */ = {isa = PBXBuildFile; fileRef = E974D7361DB0095900A06F7D /* Store.m */; };
+		E974D73A1DB0096600A06F7D /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = E974D7391DB0096600A06F7D /* Item.m */; };
+		E974D7401DB0112C00A06F7D /* StoreAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E974D73F1DB0112C00A06F7D /* StoreAddViewController.m */; };
+		E974D7431DB01C5100A06F7D /* HexToRGB.m in Sources */ = {isa = PBXBuildFile; fileRef = E974D7421DB01C5100A06F7D /* HexToRGB.m */; };
+		E974D7461DB01DFB00A06F7D /* Values.m in Sources */ = {isa = PBXBuildFile; fileRef = E974D7451DB01DFB00A06F7D /* Values.m */; };
+		E974D74C1DB0373200A06F7D /* StoreViewItemsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E974D74B1DB0373200A06F7D /* StoreViewItemsTableViewController.m */; };
+		E974D74F1DB054F700A06F7D /* ItemAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E974D74E1DB054F700A06F7D /* ItemAddViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E974D7161DB007B100A06F7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E974D6F41DB007B000A06F7D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E974D6FB1DB007B000A06F7D;
+			remoteInfo = ColbyG;
+		};
+		E974D7211DB007B100A06F7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E974D6F41DB007B000A06F7D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E974D6FB1DB007B000A06F7D;
+			remoteInfo = ColbyG;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E974D6FC1DB007B000A06F7D /* ColbyG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColbyG.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E974D7001DB007B000A06F7D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E974D7021DB007B000A06F7D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E974D7031DB007B000A06F7D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E974D7051DB007B000A06F7D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E974D7061DB007B100A06F7D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E974D7091DB007B100A06F7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E974D70B1DB007B100A06F7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E974D70E1DB007B100A06F7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E974D7101DB007B100A06F7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E974D7151DB007B100A06F7D /* ColbyGTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColbyGTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E974D7191DB007B100A06F7D /* ColbyGTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColbyGTests.m; sourceTree = "<group>"; };
+		E974D71B1DB007B100A06F7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E974D7201DB007B100A06F7D /* ColbyGUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColbyGUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E974D7241DB007B100A06F7D /* ColbyGUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColbyGUITests.m; sourceTree = "<group>"; };
+		E974D7261DB007B100A06F7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E974D7321DB0089500A06F7D /* StoreListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreListTableViewController.h; sourceTree = "<group>"; };
+		E974D7331DB0089500A06F7D /* StoreListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreListTableViewController.m; sourceTree = "<group>"; };
+		E974D7351DB0095900A06F7D /* Store.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Store.h; sourceTree = "<group>"; };
+		E974D7361DB0095900A06F7D /* Store.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Store.m; sourceTree = "<group>"; };
+		E974D7381DB0096600A06F7D /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		E974D7391DB0096600A06F7D /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		E974D73E1DB0112C00A06F7D /* StoreAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreAddViewController.h; sourceTree = "<group>"; };
+		E974D73F1DB0112C00A06F7D /* StoreAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreAddViewController.m; sourceTree = "<group>"; };
+		E974D7411DB01C5100A06F7D /* HexToRGB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HexToRGB.h; sourceTree = "<group>"; };
+		E974D7421DB01C5100A06F7D /* HexToRGB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HexToRGB.m; sourceTree = "<group>"; };
+		E974D7441DB01DFB00A06F7D /* Values.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Values.h; sourceTree = "<group>"; };
+		E974D7451DB01DFB00A06F7D /* Values.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Values.m; sourceTree = "<group>"; };
+		E974D74A1DB0373200A06F7D /* StoreViewItemsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StoreViewItemsTableViewController.h; path = ../StoreViewItemsTableViewController.h; sourceTree = "<group>"; };
+		E974D74B1DB0373200A06F7D /* StoreViewItemsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StoreViewItemsTableViewController.m; path = ../StoreViewItemsTableViewController.m; sourceTree = "<group>"; };
+		E974D74D1DB054F700A06F7D /* ItemAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemAddViewController.h; sourceTree = "<group>"; };
+		E974D74E1DB054F700A06F7D /* ItemAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemAddViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E974D6F91DB007B000A06F7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E974D7121DB007B100A06F7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E974D71D1DB007B100A06F7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E974D6F31DB007B000A06F7D = {
+			isa = PBXGroup;
+			children = (
+				E974D7081DB007B100A06F7D /* Main.storyboard */,
+				E974D6FE1DB007B000A06F7D /* ColbyG */,
+				E974D7181DB007B100A06F7D /* ColbyGTests */,
+				E974D7231DB007B100A06F7D /* ColbyGUITests */,
+				E974D6FD1DB007B000A06F7D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E974D6FD1DB007B000A06F7D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E974D6FC1DB007B000A06F7D /* ColbyG.app */,
+				E974D7151DB007B100A06F7D /* ColbyGTests.xctest */,
+				E974D7201DB007B100A06F7D /* ColbyGUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E974D6FE1DB007B000A06F7D /* ColbyG */ = {
+			isa = PBXGroup;
+			children = (
+				E974D7411DB01C5100A06F7D /* HexToRGB.h */,
+				E974D7421DB01C5100A06F7D /* HexToRGB.m */,
+				E974D7441DB01DFB00A06F7D /* Values.h */,
+				E974D7451DB01DFB00A06F7D /* Values.m */,
+				E974D73C1DB00E2A00A06F7D /* Store */,
+				E974D73B1DB0096E00A06F7D /* Objects */,
+				E974D7021DB007B000A06F7D /* AppDelegate.h */,
+				E974D7031DB007B000A06F7D /* AppDelegate.m */,
+				E974D7051DB007B000A06F7D /* ViewController.h */,
+				E974D7061DB007B100A06F7D /* ViewController.m */,
+				E974D70B1DB007B100A06F7D /* Assets.xcassets */,
+				E974D70D1DB007B100A06F7D /* LaunchScreen.storyboard */,
+				E974D7101DB007B100A06F7D /* Info.plist */,
+				E974D6FF1DB007B000A06F7D /* Supporting Files */,
+			);
+			path = ColbyG;
+			sourceTree = "<group>";
+		};
+		E974D6FF1DB007B000A06F7D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E974D7001DB007B000A06F7D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E974D7181DB007B100A06F7D /* ColbyGTests */ = {
+			isa = PBXGroup;
+			children = (
+				E974D7191DB007B100A06F7D /* ColbyGTests.m */,
+				E974D71B1DB007B100A06F7D /* Info.plist */,
+			);
+			path = ColbyGTests;
+			sourceTree = "<group>";
+		};
+		E974D7231DB007B100A06F7D /* ColbyGUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E974D7241DB007B100A06F7D /* ColbyGUITests.m */,
+				E974D7261DB007B100A06F7D /* Info.plist */,
+			);
+			path = ColbyGUITests;
+			sourceTree = "<group>";
+		};
+		E974D73B1DB0096E00A06F7D /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				E974D7351DB0095900A06F7D /* Store.h */,
+				E974D7361DB0095900A06F7D /* Store.m */,
+				E974D7381DB0096600A06F7D /* Item.h */,
+				E974D7391DB0096600A06F7D /* Item.m */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		E974D73C1DB00E2A00A06F7D /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				E974D73D1DB00E3300A06F7D /* Items */,
+				E974D7321DB0089500A06F7D /* StoreListTableViewController.h */,
+				E974D7331DB0089500A06F7D /* StoreListTableViewController.m */,
+				E974D73E1DB0112C00A06F7D /* StoreAddViewController.h */,
+				E974D73F1DB0112C00A06F7D /* StoreAddViewController.m */,
+				E974D74A1DB0373200A06F7D /* StoreViewItemsTableViewController.h */,
+				E974D74B1DB0373200A06F7D /* StoreViewItemsTableViewController.m */,
+				E974D74D1DB054F700A06F7D /* ItemAddViewController.h */,
+				E974D74E1DB054F700A06F7D /* ItemAddViewController.m */,
+			);
+			name = Store;
+			sourceTree = "<group>";
+		};
+		E974D73D1DB00E3300A06F7D /* Items */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Items;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E974D6FB1DB007B000A06F7D /* ColbyG */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E974D7291DB007B100A06F7D /* Build configuration list for PBXNativeTarget "ColbyG" */;
+			buildPhases = (
+				E974D6F81DB007B000A06F7D /* Sources */,
+				E974D6F91DB007B000A06F7D /* Frameworks */,
+				E974D6FA1DB007B000A06F7D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ColbyG;
+			productName = ColbyG;
+			productReference = E974D6FC1DB007B000A06F7D /* ColbyG.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E974D7141DB007B100A06F7D /* ColbyGTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E974D72C1DB007B100A06F7D /* Build configuration list for PBXNativeTarget "ColbyGTests" */;
+			buildPhases = (
+				E974D7111DB007B100A06F7D /* Sources */,
+				E974D7121DB007B100A06F7D /* Frameworks */,
+				E974D7131DB007B100A06F7D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E974D7171DB007B100A06F7D /* PBXTargetDependency */,
+			);
+			name = ColbyGTests;
+			productName = ColbyGTests;
+			productReference = E974D7151DB007B100A06F7D /* ColbyGTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E974D71F1DB007B100A06F7D /* ColbyGUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E974D72F1DB007B100A06F7D /* Build configuration list for PBXNativeTarget "ColbyGUITests" */;
+			buildPhases = (
+				E974D71C1DB007B100A06F7D /* Sources */,
+				E974D71D1DB007B100A06F7D /* Frameworks */,
+				E974D71E1DB007B100A06F7D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E974D7221DB007B100A06F7D /* PBXTargetDependency */,
+			);
+			name = ColbyGUITests;
+			productName = ColbyGUITests;
+			productReference = E974D7201DB007B100A06F7D /* ColbyGUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E974D6F41DB007B000A06F7D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = colbyg;
+				TargetAttributes = {
+					E974D6FB1DB007B000A06F7D = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					E974D7141DB007B100A06F7D = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E974D6FB1DB007B000A06F7D;
+					};
+					E974D71F1DB007B100A06F7D = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E974D6FB1DB007B000A06F7D;
+					};
+				};
+			};
+			buildConfigurationList = E974D6F71DB007B000A06F7D /* Build configuration list for PBXProject "ColbyG" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E974D6F31DB007B000A06F7D;
+			productRefGroup = E974D6FD1DB007B000A06F7D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E974D6FB1DB007B000A06F7D /* ColbyG */,
+				E974D7141DB007B100A06F7D /* ColbyGTests */,
+				E974D71F1DB007B100A06F7D /* ColbyGUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E974D6FA1DB007B000A06F7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E974D70F1DB007B100A06F7D /* LaunchScreen.storyboard in Resources */,
+				E974D70C1DB007B100A06F7D /* Assets.xcassets in Resources */,
+				E974D70A1DB007B100A06F7D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E974D7131DB007B100A06F7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E974D71E1DB007B100A06F7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E974D6F81DB007B000A06F7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E974D7431DB01C5100A06F7D /* HexToRGB.m in Sources */,
+				E974D73A1DB0096600A06F7D /* Item.m in Sources */,
+				E974D7071DB007B100A06F7D /* ViewController.m in Sources */,
+				E974D7401DB0112C00A06F7D /* StoreAddViewController.m in Sources */,
+				E974D7341DB0089500A06F7D /* StoreListTableViewController.m in Sources */,
+				E974D7041DB007B000A06F7D /* AppDelegate.m in Sources */,
+				E974D74F1DB054F700A06F7D /* ItemAddViewController.m in Sources */,
+				E974D7461DB01DFB00A06F7D /* Values.m in Sources */,
+				E974D7371DB0095900A06F7D /* Store.m in Sources */,
+				E974D7011DB007B000A06F7D /* main.m in Sources */,
+				E974D74C1DB0373200A06F7D /* StoreViewItemsTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E974D7111DB007B100A06F7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E974D71A1DB007B100A06F7D /* ColbyGTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E974D71C1DB007B100A06F7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E974D7251DB007B100A06F7D /* ColbyGUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E974D7171DB007B100A06F7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E974D6FB1DB007B000A06F7D /* ColbyG */;
+			targetProxy = E974D7161DB007B100A06F7D /* PBXContainerItemProxy */;
+		};
+		E974D7221DB007B100A06F7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E974D6FB1DB007B000A06F7D /* ColbyG */;
+			targetProxy = E974D7211DB007B100A06F7D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E974D7081DB007B100A06F7D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E974D7091DB007B100A06F7D /* Base */,
+			);
+			name = Main.storyboard;
+			path = ColbyG;
+			sourceTree = "<group>";
+		};
+		E974D70D1DB007B100A06F7D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E974D70E1DB007B100A06F7D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E974D7271DB007B100A06F7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E974D7281DB007B100A06F7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E974D72A1DB007B100A06F7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ColbyG/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.colbyg.ColbyG;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E974D72B1DB007B100A06F7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ColbyG/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.colbyg.ColbyG;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E974D72D1DB007B100A06F7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ColbyGTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.colbyg.ColbyGTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColbyG.app/ColbyG";
+			};
+			name = Debug;
+		};
+		E974D72E1DB007B100A06F7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ColbyGTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.colbyg.ColbyGTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColbyG.app/ColbyG";
+			};
+			name = Release;
+		};
+		E974D7301DB007B100A06F7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ColbyGUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.colbyg.ColbyGUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ColbyG;
+			};
+			name = Debug;
+		};
+		E974D7311DB007B100A06F7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ColbyGUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.colbyg.ColbyGUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ColbyG;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E974D6F71DB007B000A06F7D /* Build configuration list for PBXProject "ColbyG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E974D7271DB007B100A06F7D /* Debug */,
+				E974D7281DB007B100A06F7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E974D7291DB007B100A06F7D /* Build configuration list for PBXNativeTarget "ColbyG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E974D72A1DB007B100A06F7D /* Debug */,
+				E974D72B1DB007B100A06F7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E974D72C1DB007B100A06F7D /* Build configuration list for PBXNativeTarget "ColbyGTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E974D72D1DB007B100A06F7D /* Debug */,
+				E974D72E1DB007B100A06F7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E974D72F1DB007B100A06F7D /* Build configuration list for PBXNativeTarget "ColbyGUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E974D7301DB007B100A06F7D /* Debug */,
+				E974D7311DB007B100A06F7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E974D6F41DB007B000A06F7D /* Project object */;
+}
