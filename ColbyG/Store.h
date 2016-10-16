@@ -16,4 +16,6 @@
 @property (nonatomic, strong)   NSMutableArray  *storeItems;
 
 
+- (void) moveItemFrom:(int)itemIndex1 to:(int)itemIndex2;
+
 @end

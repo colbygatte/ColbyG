@@ -28,7 +28,13 @@
     [encoder encodeObject: self.storeName    forKey: @"storeName"];
     [encoder encodeObject: self.storeID      forKey: @"storeID"];
     [encoder encodeObject: self.storeItems   forKey: @"storeItems"];
-    
 }
+
+- (void) moveItemFrom:(int)itemIndex1 to:(int)itemIndex2 {
+    Item *item = self.storeItems[itemIndex1];
+    [self.storeItems removeObjectAtIndex:itemIndex1];
+    [self.storeItems insertObject:item atIndex:itemIndex2];
+}
+
 
 @end

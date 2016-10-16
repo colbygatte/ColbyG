@@ -12,6 +12,7 @@
 #import "StoreViewItemsTableViewController.h"
 #import "HexToRGB.h"
 #import "Values.h"
+#import "Stores.h"
 
 @interface StoreListTableViewController : UITableViewController <
 StoreAddViewController_Delegate, StoreViewItemsTableViewController_Delegate
@@ -21,5 +22,6 @@ StoreAddViewController_Delegate, StoreViewItemsTableViewController_Delegate
 }
 
 @property (nonatomic, weak) IBOutlet UIBarButtonItem *addButton;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem *doneEditingButton;
 
 @end

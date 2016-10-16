@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -52,6 +53,11 @@
                         <barButtonItem title="Add Store" id="Ym5-eW-9Ee"/>
                     </toolbarItems>
                     <navigationItem key="navigationItem" title="Stores" id="CSF-UI-kHz">
+                        <barButtonItem key="leftBarButtonItem" title="Done" id="Lay-Es-xmB">
+                            <connections>
+                                <action selector="doneEditingButtonPressed" destination="x72-SV-xc7" id="fpc-9W-ISI"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Add Store" id="w85-Rj-6Dg">
                             <connections>
                                 <segue destination="vmY-RE-C35" kind="presentation" identifier="StoreAdd" id="2gJ-A6-Nk9"/>
@@ -61,13 +67,14 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="addButton" destination="w85-Rj-6Dg" id="BXs-0p-N2B"/>
+                        <outlet property="doneEditingButton" destination="Lay-Es-xmB" id="Xzm-w2-JWb"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RKr-ZY-ZZ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="934" y="912"/>
         </scene>
-        <!--Title-->
+        <!--Items-->
         <scene sceneID="A75-ca-nMA">
             <objects>
                 <tableViewController id="Hfl-zO-DbK" customClass="StoreViewItemsTableViewController" sceneMemberID="viewController">
@@ -93,15 +100,24 @@
                             <outlet property="delegate" destination="Hfl-zO-DbK" id="xWD-NR-HUd"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Title" id="N5N-bj-hAu">
-                        <barButtonItem key="rightBarButtonItem" title="Add Item" id="IQR-Jw-Ug5">
-                            <connections>
-                                <segue destination="naH-kS-isP" kind="presentation" identifier="ItemAdd" id="ec3-in-LcK"/>
-                            </connections>
-                        </barButtonItem>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Items" id="N5N-bj-hAu">
+                        <rightBarButtonItems>
+                            <barButtonItem title="Add Item" id="IQR-Jw-Ug5">
+                                <connections>
+                                    <segue destination="naH-kS-isP" kind="presentation" identifier="ItemAdd" id="ec3-in-LcK"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Donezies" id="khb-dD-hSU">
+                                <connections>
+                                    <action selector="dontEditingButtonPressed" destination="Hfl-zO-DbK" id="tBR-wl-AaC"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="addButton" destination="IQR-Jw-Ug5" id="nVo-pt-2H1"/>
+                        <outlet property="doneEditingButton" destination="khb-dD-hSU" id="GcD-Q9-AZl"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hDW-To-ub9" userLabel="First Responder" sceneMemberID="firstResponder"/>

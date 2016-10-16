@@ -18,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
     // Uncomment this line to erase all data
     //[self deleteStoreData];
     
@@ -32,12 +33,36 @@
     self.view.backgroundColor = [UIColor colorWithHexString:BACKGROUND_COLOR];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone; // HIDE the cell sepearator
     
+    //
+    // Long press for edit
+    UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc]
+                                               initWithTarget:self action:@selector(longPressGestureRecognized:)];
+    [self.tableView addGestureRecognizer:longPress];
+    // The "Done" button shouldn't be seen unless we are editing
+    [self.doneEditingButton setTintColor:[UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.0]];
     
     // This doesn't do anything:
     //self.navigationController.editButtonItem.tintColor = [UIColor whiteColor];
     //
     //
     
+}
+
+- (IBAction)longPressGestureRecognized:(id)sender {
+    UILongPressGestureRecognizer *longPress = (UILongPressGestureRecognizer *)sender;
+    UIGestureRecognizerState state = longPress.state;
+    
+    CGPoint location = [longPress locationInView:self.tableView];
+    NSIndexPath *indexPath = [self.tableView indexPathForRowAtPoint:location];
+    
+    [self.doneEditingButton setTintColor:[UIColor colorWithHexString:NAV_BAR_BUTTON_TINTCOLOR]];
+    [self.tableView setEditing:YES];
+    
+}
+
+- (IBAction)doneEditingButtonPressed {
+    [self.doneEditingButton setTintColor:[UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.0]];
+    [self.tableView setEditing:NO];
 }
 
 
@@ -59,7 +84,10 @@
     NSData *encodedObject = [defaults objectForKey:@"storeData"];
     
     NSMutableArray *object = [NSKeyedUnarchiver unarchiveObjectWithData:encodedObject];
-    stores = object;
+    
+    // IMPORTANT!
+    // Must assign it as "Stores"
+    stores = (NSMutableArray *) object;
     if(stores == nil) {
         stores = [[NSMutableArray alloc] init];
     }
@@ -180,28 +208,36 @@
 }
 
 
-/*
+
 // Override to support rearranging the table view.
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+    NSLog(@"MOVING-------");
+    
+    int r1 = (int) fromIndexPath.row;
+    int r2 = (int) toIndexPath.row;
+    
+    [self moveRow:r1 to:r2];
+    
+    
+    [self storeDataHasChanged];
+    //[self.tableView reloadData];
 }
-*/
 
-/*
+// A delegate method, also used in this file
+- (void) moveRow:(int)from to:(int)to {
+    Store *object = stores[from];
+    [stores removeObjectAtIndex:from];
+    [stores insertObject:object atIndex:to];
+}
+
+
 // Override to support conditional rearranging of the table view.
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
     // Return NO if you do not want the item to be re-orderable.
     return YES;
 }
-*/
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+
 
 @end
